@@ -22,6 +22,7 @@
     <AssemblyVersion>$(BrandDisplayVersion)</AssemblyVersion>
     <FileVersion>$(BrandDisplayVersion)</FileVersion>
     <InformationalVersion>$(BrandDisplayVersion)</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <Version>$(BrandDisplayVersion)</Version>
   </PropertyGroup>
 

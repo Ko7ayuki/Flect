@@ -6,10 +6,11 @@
     <BrandPreviewClsid>{CBB10B48-4759-440B-AC1B-464F22A79CDE}</BrandPreviewClsid>
     <BrandPreviewHtmlClsid>{278E97FA-5FB2-4E65-8278-1F7A663C4EA4}</BrandPreviewHtmlClsid>
     <BrandPreviewAppId>{A9975779-3CE3-47B2-B696-2CD97D01A683}</BrandPreviewAppId>
-    <BrandVersion>1.1</BrandVersion>
+    <BrandVersion>1.2</BrandVersion>
     <BrandDisplayVersion>$(BrandVersion)</BrandDisplayVersion>
     <BrandDisplayVersion Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(BrandDisplayVersion)', '^\d+\.\d+\.\d+\.0$'))">$([System.Text.RegularExpressions.Regex]::Replace('$(BrandDisplayVersion)', '\.0$', ''))</BrandDisplayVersion>
     <BrandDisplayVersion Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(BrandDisplayVersion)', '^\d+\.\d+\.0$'))">$([System.Text.RegularExpressions.Regex]::Replace('$(BrandDisplayVersion)', '\.0$', ''))</BrandDisplayVersion>
+    <BrandVersionNumbers>$([System.Text.RegularExpressions.Regex]::Replace('$(BrandVersion).0.0.0', '^(\d+)\.(\d+)\.(\d+)\.(\d+).*$', '$1,$2,$3,$4'))</BrandVersionNumbers>
   </PropertyGroup>
 
   <PropertyGroup>

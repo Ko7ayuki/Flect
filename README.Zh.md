@@ -190,6 +190,8 @@ Flect 会替代 Windows 原生预览功能。你可以在设置中的 **Preview*
 
 右键菜单中的预设值（例如 `50%`、`10 MB`、`45°`）也可以在这里修改。
 
+---
+
 ## 系统要求
 
 | | |
@@ -203,6 +205,8 @@ Flect 会替代 Windows 原生预览功能。你可以在设置中的 **Preview*
 | **Python 3.10+** | 仅 AI 功能（删除背景、字幕）需要。首次使用时，Flect 会创建一个独立的运行环境。可从 python.org 或 Microsoft Store 安装。 |
 
 其余的图片、视频、PDF 和反编译引擎都已包含在安装程序中。AI 功能会在首次使用时联网下载所需的引擎和模型。Flect 不会上传任何数据，所有处理都在你的电脑上完成。
+
+---
 
 ## 常见问题
 
@@ -390,6 +394,33 @@ Windows 只支持一层 `IExplorerCommand` 子命令。因此，现代版 Flect 
 | 反编译所需环境 | JDK / JRE | 用户自行安装 |
 | 写入 HEIC | Windows HEVC 视频扩展 | 用户自行安装 |
 | 字幕 | faster-whisper | 首次使用时安装 |
+
+---
+
+## 代码签名政策
+
+Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
+
+`Flect-Setup.exe` 和 Flect 自身的二进制文件（`Flect.exe`、`Flect.dll`、`FlectShell.dll`、`FlectPreview.dll`）均已签名。它们由 GitHub Actions 从本仓库构建，每个版本都要经过人工批准后才会签名。安装程序中打包第三方工具不由本项目签名。
+
+**Committers and Reviewers**
+ * [Konayukiw](https://github.com/Konayukiw)
+
+**Approvers**
+ * [Konayukiw](https://github.com/Konayukiw)
+
+其他贡献者的更改会先由提交者审查，然后才会合并。
+
+---
+
+### 隐私政策
+
+Flect不收集遥测数据、使用数据或个人信息，也不会上传你处理的文件。只有在以下情况下，它才会连接其他网络系统。
+
+- **自动更新** - 当 **设置 > 常规** 中的 **启用自动更新** 处于开启状态时（默认开启），Flect会在你登录Windows时向 GitHub 查询最新版本，并从 GitHub Releases 下载新的安装程序。适用 [GitHub 一般隐私声明](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)。
+- **AI 功能** - 首次使用删除背景或字幕时，Flect 会从 [Python Package Index](https://pypi.org)（[隐私声明](https://policies.python.org/pypi.org/Privacy-Notice/)）安装所需的Python包。删除背景的模型从GitHub下载，字幕的模型从 [Hugging Face](https://hf.co)（[隐私政策](https://huggingface.co/privacy)）下载。
+- **预览** - 只有在预览窗格中允许后，电脑上的 HTML 文件才会访问网络。
+- **文字识别语言** - 当你通过Flect安装文字识别语言时，Windows会下载对应的语言包。
 
 ---
 

@@ -67,6 +67,9 @@
       <EnableCOMDATFolding Condition="'$(Configuration)' == 'Release'">true</EnableCOMDATFolding>
       <OptimizeReferences Condition="'$(Configuration)' == 'Release'">true</OptimizeReferences>
     </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
   </ItemDefinitionGroup>
 
   <ItemGroup>
@@ -105,6 +108,10 @@
     <None Include="FlectPreview.def" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ResourceCompile Include="..\Version.rc" />
+  </ItemGroup>
+
   <Target Name="GenerateBrandingHeader"
           BeforeTargets="ClCompile"
           Inputs="$(RepoRoot)Directory.Build.props;$(MSBuildThisFileFullPath)"
@@ -120,6 +127,26 @@
     </ItemGroup>
     <WriteLinesToFile File="$(IntDir)Branding.g.h"
                       Lines="@(_BrandLine)"
+                      Overwrite="true"
+                      WriteOnlyWhenDifferent="true"
+                      Encoding="utf-8" />
+  </Target>
+
+  <Target Name="GenerateVersionHeader"
+          BeforeTargets="ResourceCompile"
+          Inputs="$(RepoRoot)Directory.Build.props;$(MSBuildThisFileFullPath)"
+          Outputs="$(IntDir)Version.g.h">
+    <MakeDir Directories="$(IntDir)" />
+    <ItemGroup>
+      <_VersionLine Remove="@(_VersionLine)" />
+      <_VersionLine Include="#define BRAND_VERSION_NUMBERS $(BrandVersionNumbers)" />
+      <_VersionLine Include="#define BRAND_VERSION_TEXT &quot;$(BrandDisplayVersion)&quot;" />
+      <_VersionLine Include="#define BRAND_PRODUCT_TEXT &quot;$(BrandName)&quot;" />
+      <_VersionLine Include="#define BRAND_FILE_TEXT &quot;$(TargetName)$(TargetExt)&quot;" />
+      <_VersionLine Include="#define BRAND_DESCRIPTION_TEXT &quot;$(BrandName) preview handler&quot;" />
+    </ItemGroup>
+    <WriteLinesToFile File="$(IntDir)Version.g.h"
+                      Lines="@(_VersionLine)"
                       Overwrite="true"
                       WriteOnlyWhenDifferent="true"
                       Encoding="utf-8" />

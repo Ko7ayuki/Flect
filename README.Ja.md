@@ -191,6 +191,8 @@ FlectはWindows標準のプレビュー機能を置き換えます。使用す�
 
 メニュー内のプリセット（`50%`、`10 MB`、`45°` など）も、ここから編集可能です。
 
+---
+
 ## システム要件
 
 | | |
@@ -204,6 +206,8 @@ FlectはWindows標準のプレビュー機能を置き換えます。使用す�
 | **Python 3.10+** | 背景削除、字幕生成を使用する場合にのみ必要です。初回使用時に Flect が専用の実行環境を自動的に構築します。python.org または Microsoft Store からインストールしてください。 |
 
 その他の依存コンポーネントは、すべてインストーラーに同梱されています。AI 機能に必要なエンジンやモデルは、初回使用時にダウンロードされます。
+
+---
 
 ## よくある質問
 
@@ -373,6 +377,33 @@ Flect は GitHub の Releases と公式サイト（flect.konayuki.xyz）での�
 | デコンパイル | JDK / JRE | ユーザーがインストール |
 | HEIC 書き出し | Windows HEVC Video Extensions | ユーザーがインストール |
 | 字幕生成 | faster-whisper | 初回使用時にインストール |
+
+---
+
+## コード署名ポリシー
+
+Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
+
+`Flect-Setup.exe` とFlectのバイナリ（`Flect.exe`、`Flect.dll`、`FlectShell.dll`、`FlectPreview.dll`）は SignPath Foundation によって署名されています。これらはこのリポジトリから GitHub Actions でビルドされ、リリースごとに手動で承認してから署名されます。同梱している サードパーティツールは、このプロジェクトでは署名していません。
+
+**Committers and Reviewers**
+ * [Konayukiw](https://github.com/Konayukiw)
+
+**Approvers**
+ * [Konayukiw](https://github.com/Konayukiw)
+
+他の Committers, Reviewers, Approvers の追加は `main` へのマージ後に追記されます。
+
+---
+
+## プライバシーポリシー
+
+Flectはテレメトリー、利用状況、個人情報を収集せず、処理するファイルをサーバーにアップロードすることもありません。ほかのネットワーク上のシステムに接続するのは、次の場合だけです。
+
+- **自動アップデート** - **設定 > 一般** の **自動アップデートを有効にする** がオンの場合、Windows へのサインイン時に GitHub で最新リリースを確認し、新しいセットアップを GitHub Releases からダウンロードします。[GitHub のプライバシーに関する声明](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)が適用されます。
+- **AI機能** - 背景削除や字幕機能を初めて使うとき、Python パッケージを [Python Package Index](https://pypi.org)（[プライバシー通知](https://policies.python.org/pypi.org/Privacy-Notice/)）からインストールします。モデルは、背景削除では GitHub から、字幕では [Hugging Face](https://hf.co)（[プライバシーポリシー](https://huggingface.co/privacy)）からダウンロードします。
+- **プレビュー** - デバイス上の HTML ファイルがネットワークにアクセスするのは、プレビューウィンドウでユーザーが直接許可した場合のみです。
+- **言語パック** - OCR の言語のインストールを Flect から実行すると、Windows が言語パックをダウンロードします。
 
 ---
 

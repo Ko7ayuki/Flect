@@ -92,7 +92,7 @@ jobs:
         run: |
           [xml]$props = Get-Content Directory.Build.props
           $brand = ($props.Project.PropertyGroup | Where-Object { $_.BrandName } | Select-Object -First 1).BrandName
-          $names = @("$brand.exe", "$brand.dll", "${brand}Shell.dll")
+          $names = @("$brand.exe", "$brand.dll", "${brand}Shell.dll", "${brand}Preview.dll")
           $directory = Join-Path $pwd 'signing'
           New-Item -ItemType Directory -Force -Path $directory | Out-Null
           $zipPath = Join-Path $directory 'flect-binaries.zip'
@@ -136,7 +136,7 @@ jobs:
         run: |
           [xml]$props = Get-Content Directory.Build.props
           $brand = ($props.Project.PropertyGroup | Where-Object { $_.BrandName } | Select-Object -First 1).BrandName
-          foreach ($name in @("$brand.exe", "$brand.dll", "${brand}Shell.dll")) {
+          foreach ($name in @("$brand.exe", "$brand.dll", "${brand}Shell.dll", "${brand}Preview.dll")) {
             $signed = Get-ChildItem signed-binaries -Recurse -File -Filter $name | Select-Object -First 1
             if (-not $signed) { throw "Signed $name was not found." }
             $signature = Get-AuthenticodeSignature -LiteralPath $signed.FullName
@@ -198,7 +198,7 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw "Draft release $tag was not found." }
           $view = $release | ConvertFrom-Json
           if (-not $view.isDraft) { throw "Release $tag is already published." }
-          gh api --method PATCH "repos/$env:GITHUB_REPOSITORY/releases/$($view.id)" -f "name=$brand $display"
-          if ($LASTEXITCODE -ne 0) { throw "Setting the title of $tag to $brand $display failed." }
+          gh api --method PATCH "repos/$env:GITHUB_REPOSITORY/releases/$($view.id)" -f "name=$brand $display" -f "target_commitish=$env:GITHUB_SHA"
+          if ($LASTEXITCODE -ne 0) { throw "Setting the title and target commit of $tag failed." }
           gh release upload $tag $setup --clobber --repo $env:GITHUB_REPOSITORY
           if ($LASTEXITCODE -ne 0) { throw "Uploading $brand-Setup.exe to $tag failed." }
