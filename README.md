@@ -392,22 +392,6 @@ The default smoke tests run without an installed worker or elevated permissions 
 
 ---
 
-## Code signing policy
-
-Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
-
-`Flect-Setup.exe` and Flect's own binaries (`Flect.exe`, `Flect.dll`, `FlectShell.dll` and `FlectPreview.dll`) are signed by SignPath Foundation. They are built from this repository by GitHub Actions, and each release is signed only after a manual approval. Bundled third-party tools are not signed by this project.
-
-**Committers and Reviewers**
- * [Konayukiw](https://github.com/Konayukiw)
-
-**Approvers**
- * [Konayukiw](https://github.com/Konayukiw)
-
-Changes from other contributors will be added after the changes are merged into `main`.
-
----
-
 ## Privacy policy
 
 Flect does not collect telemetry, usage data or personal information, and it never uploads the files you work on. It connects to other networked systems only in these cases.
@@ -415,7 +399,7 @@ Flect does not collect telemetry, usage data or personal information, and it nev
 - **Auto update** - While **Enable auto update** is on in **Settings > General** (on by default), Flect asks GitHub for the latest release when you sign in to Windows, and downloads the new Setup from GitHub Releases. The [GitHub General Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement) applies.
 - **AI features** - The first time you use Remove Background or Subtitles, Flect installs their Python packages from the [Python Package Index](https://pypi.org) ([Privacy Notice](https://policies.python.org/pypi.org/Privacy-Notice/)). Remove Background downloads its model from GitHub, and Subtitles downloads its model from [Hugging Face](https://hf.co) ([Privacy Policy](https://huggingface.co/privacy)).
 - **Preview** - An HTML file on your PC reaches the network only after you allow it in the preview pane.
-- **OCR languages** - When you ask Flect to install an OCR language, Windows downloads the language pack.
+- **Language pack** - When you ask Flect to install an OCR language, Windows downloads the language pack.
 
 ---
 

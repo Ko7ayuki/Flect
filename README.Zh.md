@@ -397,22 +397,6 @@ Windows 只支持一层 `IExplorerCommand` 子命令。因此，现代版 Flect 
 
 ---
 
-## 代码签名政策
-
-Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
-
-`Flect-Setup.exe` 和 Flect 自身的二进制文件（`Flect.exe`、`Flect.dll`、`FlectShell.dll`、`FlectPreview.dll`）均已签名。它们由 GitHub Actions 从本仓库构建，每个版本都要经过人工批准后才会签名。安装程序中打包第三方工具不由本项目签名。
-
-**Committers and Reviewers**
- * [Konayukiw](https://github.com/Konayukiw)
-
-**Approvers**
- * [Konayukiw](https://github.com/Konayukiw)
-
-其他贡献者的更改会先由提交者审查，然后才会合并。
-
----
-
 ### 隐私政策
 
 Flect不收集遥测数据、使用数据或个人信息，也不会上传你处理的文件。只有在以下情况下，它才会连接其他网络系统。

@@ -119,7 +119,3 @@ After installing, right-click any file or folder and choose **Show more options*
 > **Why "Show more options"?**  - Windows 11 gives its short right-click menu. You can bring it up to the top level. See [FAQ](https://github.com/Ko7ayuki/Flect/blob/main/README.md#faq) below.
 
 To change detailed settings, open **Flect** from the Start menu.
-
-## Code signing policy
-
-Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org). The team roles are in the [code signing policy](https://github.com/Ko7ayuki/Flect#code-signing-policy), and what Flect sends over the network is in the [privacy policy](https://github.com/Ko7ayuki/Flect#privacy-policy).

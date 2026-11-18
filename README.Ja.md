@@ -380,22 +380,6 @@ Flect は GitHub の Releases と公式サイト（flect.konayuki.xyz）での�
 
 ---
 
-## コード署名ポリシー
-
-Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
-
-`Flect-Setup.exe` とFlectのバイナリ（`Flect.exe`、`Flect.dll`、`FlectShell.dll`、`FlectPreview.dll`）は SignPath Foundation によって署名されています。これらはこのリポジトリから GitHub Actions でビルドされ、リリースごとに手動で承認してから署名されます。同梱している サードパーティツールは、このプロジェクトでは署名していません。
-
-**Committers and Reviewers**
- * [Konayukiw](https://github.com/Konayukiw)
-
-**Approvers**
- * [Konayukiw](https://github.com/Konayukiw)
-
-他の Committers, Reviewers, Approvers の追加は `main` へのマージ後に追記されます。
-
----
-
 ## プライバシーポリシー
 
 Flectはテレメトリー、利用状況、個人情報を収集せず、処理するファイルをサーバーにアップロードすることもありません。ほかのネットワーク上のシステムに接続するのは、次の場合だけです。
