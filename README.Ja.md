@@ -12,6 +12,8 @@
   <img src="src/App/Assets/Introduction/Hero-Ja.png" alt="Flect - 右クリックで、ぜんぶ完結。" width="860">
 </p>
 
+Konayukiwのアカウント凍結に伴い、Konayukiw/Flectから移行されました。このリポジトリがFlectの唯一の公式リポジトリです。
+
 </div>
 
 ---

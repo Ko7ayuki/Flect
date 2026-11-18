@@ -12,6 +12,8 @@
   <img src="src/App/Assets/Introduction/Hero-Zh.png" alt="Flect - 右键即可搞定一切。" width="860">
 </p>
 
+从 Konayukiw/Flect 迁移而来（因 Konayukiw 账号被封禁）；此为 Flect 唯一的官方代码仓库。
+
 </div>
 
 ---

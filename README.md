@@ -12,6 +12,8 @@ You don't have to search for converter on the browser or compress using Video Ed
   <img src="src/App/Assets/Introduction/Hero-En.png" alt="Flect - Right-click to do it all." width="860">
 </p>
 
+Transferred from Konayukiw/Flect because of Konayukiw suspension and this is the only official Flect repository.
+
 </div>
 
 ---
