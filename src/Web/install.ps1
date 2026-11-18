@@ -10,7 +10,7 @@ param(
     $ProgressPreference = 'SilentlyContinue'
 
     $brand = 'Flect'
-    $repository = 'Konayukiw/Flect'
+    $repository = 'Ko7ayuki/Flect'
     $appId = '{16C090EA-F07E-47B7-8811-B97D3BE26DDC}'
     $clsid = '{4D038D4F-2125-48BE-8848-BA30A13AC7EA}'
     $api = "https://api.github.com/repos/$repository"

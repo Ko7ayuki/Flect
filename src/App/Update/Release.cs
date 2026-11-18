@@ -10,7 +10,7 @@ namespace Flect.Update;
 
 internal static class Release
 {
-    private const string GitHubApiLatest = "https://api.github.com/repos/Konayukiw/Flect/releases/latest";
+    private const string GitHubApiLatest = "https://api.github.com/repos/Ko7ayuki/Flect/releases/latest";
     private const string RunSubKey = @"Software\Microsoft\Windows\CurrentVersion\Run";
 
     private static string RunValueName => $"{Branding.Name}AutoUpdate";

@@ -1644,8 +1644,8 @@ if (hvTabsWrap) {
   } catch {}
 
   Promise.all([
-    fetch("https://api.github.com/repos/Konayukiw/Flect").then((r) => (r.ok ? r.json() : null)),
-    fetch("https://api.github.com/repos/Konayukiw/Flect/releases?per_page=100").then((r) => (r.ok ? r.json() : null)),
+    fetch("https://api.github.com/repos/Ko7ayuki/Flect").then((r) => (r.ok ? r.json() : null)),
+    fetch("https://api.github.com/repos/Ko7ayuki/Flect/releases?per_page=100").then((r) => (r.ok ? r.json() : null)),
   ]).then(([repo, releases]) => {
     const stars = repo && typeof repo.stargazers_count === "number" ? repo.stargazers_count : 0;
     const downloads = Array.isArray(releases)
