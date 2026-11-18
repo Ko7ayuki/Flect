@@ -100,7 +100,7 @@
     <PackageReference Include="PDFtoImage" Version="5.4.0" />
     <PackageReference Include="PdfPig" Version="0.1.16" />
     <PackageReference Include="System.IO.Hashing" Version="10.0.10" />
-    <PackageReference Include="UTF.Unknown" Version="2.6.0" />
+    <PackageReference Include="UTF.Unknown" Version="2.8.0" />
   </ItemGroup>
 
   <Target Name="TrimForeignSymbols" AfterTargets="Publish">
