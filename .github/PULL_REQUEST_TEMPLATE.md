@@ -17,7 +17,7 @@
 - [ ] This pull request covers one topic.
 - [ ] `scripts/build.ps1` succeeds.
 - [ ] `node evals/i18n/check.mjs` succeeds.
-- [ ] The pull request complied with [CONTRIBUTING.md](https://github.com/Konayukiw/Flect/blob/main/CONTRIBUTING.md).
+- [ ] The pull request complied with [CONTRIBUTING.md](https://github.com/Ko7ayuki/Flect/blob/main/CONTRIBUTING.md).
 - [ ] User-facing strings are added in English, 日本語 and 简体中文.
 - [ ] No new third-party dependency was added without prior discussion.
 - [ ] I personally tested the changed build in own device, including failure and cancel paths.

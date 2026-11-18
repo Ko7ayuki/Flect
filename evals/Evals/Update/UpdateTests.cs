@@ -68,7 +68,7 @@ public sealed class UpdateTests
             },
             {
                 "name": "Flect-Setup.exe",
-                "browser_download_url": "https://github.com/Konayukiw/Flect/releases/download/flect-1.0/Flect-Setup.exe",
+                "browser_download_url": "https://github.com/Ko7ayuki/Flect/releases/download/flect-1.0/Flect-Setup.exe",
                 "size": 83885684
             }
         ]
@@ -79,7 +79,7 @@ public sealed class UpdateTests
 
         Assert.NotNull(asset);
         Assert.Equal("Flect-Setup.exe", asset.Name);
-        Assert.Equal("https://github.com/Konayukiw/Flect/releases/download/flect-1.0/Flect-Setup.exe", asset.DownloadUrl);
+        Assert.Equal("https://github.com/Ko7ayuki/Flect/releases/download/flect-1.0/Flect-Setup.exe", asset.DownloadUrl);
         Assert.Equal(83885684, asset.Size);
     }
 

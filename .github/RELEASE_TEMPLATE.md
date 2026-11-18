@@ -98,7 +98,7 @@ RAR is read-only: Flect can extract `.rar` files but cannot create them. This is
 
 ### Installer
 
-1. Download the latest `Flect-Setup.exe` from [Releases](https://github.com/Konayukiw/Flect/releases/latest).
+1. Download the latest `Flect-Setup.exe` from [Releases](https://github.com/Ko7ayuki/Flect/releases/latest).
 2. Run Setup and complete installation.
 
 ### PowerShell
@@ -112,14 +112,14 @@ PowerShell scripts provided in the format `irm <URL> | iex` are commands that di
 </details>
 　
 
-The script downloads the latest Setup from [Releases](https://github.com/Konayukiw/Flect/releases/latest), checks its SHA256 against the one GitHub publishes, and installs Flect. If the .NET 10 Desktop Runtime is missing, it asks before installing it, and Windows then asks for administrator permission.
+The script downloads the latest Setup from [Releases](https://github.com/Ko7ayuki/Flect/releases/latest), checks its SHA256 against the one GitHub publishes, and installs Flect. If the .NET 10 Desktop Runtime is missing, it asks before installing it, and Windows then asks for administrator permission.
 
 After installing, right-click any file or folder and choose **Show more options** to find Flect.
 
-> **Why "Show more options"?**  - Windows 11 gives its short right-click menu. You can bring it up to the top level. See [FAQ](https://github.com/Konayukiw/Flect/blob/main/README.md#faq) below.
+> **Why "Show more options"?**  - Windows 11 gives its short right-click menu. You can bring it up to the top level. See [FAQ](https://github.com/Ko7ayuki/Flect/blob/main/README.md#faq) below.
 
 To change detailed settings, open **Flect** from the Start menu.
 
 ## Code signing policy
 
-Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org). The team roles are in the [code signing policy](https://github.com/Konayukiw/Flect#code-signing-policy), and what Flect sends over the network is in the [privacy policy](https://github.com/Konayukiw/Flect#privacy-policy).
+Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org). The team roles are in the [code signing policy](https://github.com/Ko7ayuki/Flect#code-signing-policy), and what Flect sends over the network is in the [privacy policy](https://github.com/Ko7ayuki/Flect#privacy-policy).

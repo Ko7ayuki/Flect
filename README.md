@@ -20,7 +20,7 @@ You don't have to search for converter on the browser or compress using Video Ed
 
 ### Installer
 
-1. Download the latest `Flect-Setup.exe` from [Releases](https://github.com/Konayukiw/Flect/releases/latest).
+1. Download the latest `Flect-Setup.exe` from [Releases](https://github.com/Ko7ayuki/Flect/releases/latest).
 2. Run Setup and complete installation.
 
 ### PowerShell
@@ -34,7 +34,7 @@ PowerShell scripts provided in the format `irm <URL> | iex` are commands that di
 </details>
 　
 
-The script downloads the latest Setup from [Releases](https://github.com/Konayukiw/Flect/releases/latest), checks its SHA256 against the one GitHub publishes, and installs Flect. If the .NET 10 Desktop Runtime is missing, it asks before installing it, and Windows then asks for administrator permission.
+The script downloads the latest Setup from [Releases](https://github.com/Ko7ayuki/Flect/releases/latest), checks its SHA256 against the one GitHub publishes, and installs Flect. If the .NET 10 Desktop Runtime is missing, it asks before installing it, and Windows then asks for administrator permission.
 
 After installing, right-click any file or folder and choose **Show more options** to find Flect.
 

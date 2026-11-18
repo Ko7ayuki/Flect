@@ -20,7 +20,7 @@
 
 ### 安装程序
 
-1. 从 [Releases](https://github.com/Konayukiw/Flect/releases/latest) 下载最新的 `Flect-Setup.exe`。
+1. 从 [Releases](https://github.com/Ko7ayuki/Flect/releases/latest) 下载最新的 `Flect-Setup.exe`。
 2. 运行安装程序，按提示完成安装。
 
 ### PowerShell
@@ -34,7 +34,7 @@ irm https://flect.konayuki.xyz/install.ps1 | iex
 </details>
 　
 
-该脚本会从 [Releases](https://github.com/Konayukiw/Flect/releases/latest) 下载最新的安装程序，与 GitHub 公布的 SHA256 比对无误后再安装 Flect。如果电脑上没有 .NET 10 Desktop Runtime，脚本会先征得你的同意再安装，届时 Windows 会请求管理员权限。
+该脚本会从 [Releases](https://github.com/Ko7ayuki/Flect/releases/latest) 下载最新的安装程序，与 GitHub 公布的 SHA256 比对无误后再安装 Flect。如果电脑上没有 .NET 10 Desktop Runtime，脚本会先征得你的同意再安装，届时 Windows 会请求管理员权限。
 
 安装完成后，右键点击任意文件或文件夹，选择 **显示更多选项** 就能看到 Flect。
 

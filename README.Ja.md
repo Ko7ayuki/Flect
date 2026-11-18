@@ -20,7 +20,7 @@
 
 ### インストーラー
 
-1. `Flect-Setup.exe` を [リリース](https://github.com/Konayukiw/Flect/releases/latest) からダウンロード
+1. `Flect-Setup.exe` を [リリース](https://github.com/Ko7ayuki/Flect/releases/latest) からダウンロード
 2. セットアップを実行しインストール
 
 ### PowerShell
@@ -34,7 +34,7 @@ irm https://flect.konayuki.xyz/install.ps1 | iex
 </details>
 　
 
-このスクリプトは、[Releases](https://github.com/Konayukiw/Flect/releases/latest) から最新のインストーラーをダウンロードし、Flect 本体のバージョンを確認した上でインストールします。.NET 10 Desktop Runtime がインストールされていない場合はインストール前するか確認し、新たにインストールする場合はWindowsから管理者権限の昇格を求められます。
+このスクリプトは、[Releases](https://github.com/Ko7ayuki/Flect/releases/latest) から最新のインストーラーをダウンロードし、Flect 本体のバージョンを確認した上でインストールします。.NET 10 Desktop Runtime がインストールされていない場合はインストール前するか確認し、新たにインストールする場合はWindowsから管理者権限の昇格を求められます。
 
 インストール後、任意のファイルやフォルダーを右クリックし、**その他のオプションを表示** を選択すると、Flect が表示されます。
 
